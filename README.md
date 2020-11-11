@@ -1,6 +1,6 @@
 # Flasket
 
-A minimal blog powered by flask that can be compiled to a pure static site.
+Micro blog powered by Flask and flat files that can be compiled to a static site.
 
 ## Quickstart
 
