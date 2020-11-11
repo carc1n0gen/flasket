@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+    <title>{{ site.title }}</title>
+    <subtitle>{{ site.description }}</subtitle>
+    <link href="{{ request.url }}" rel="self" />
+    <link href="{{ '/' | page_url(absolute=True) }}" />
+    <updated>{{ now.isoformat('T') }}Z</updated>
+    {% if config.AUTHOR %}
+    <author>
+        <name>{{ site.author.name }}</name>
+    </author>
+    {% endif %}
+    <id>{{ request.url_root }}</id>
+
+    {% for post in posts %}
+    <entry>
+        <title>{{ post.title }}</title>
+        <id>{{ post.feed_url }}</id>
+        {% if post.author %}
+            {% if post.author is string %}
+            <author><name>{{ post.author }}</name></author>
+            {% elif post.author is sequence %}
+            {% for author in post.author %}
+            <author><name>{{ author }}</name></author>
+            {% endfor %}
+            {% endif %}
+        {% endif %}
+        <link rel="alternate" href="{{ post.feed_url }}" />
+        <content type="html">{{ post.content }}</content>
+        <updated>{{ post.updated.isoformat('T') if post.updated else post.date.isoformat('T') }}Z</updated>
+    </entry>
+    {% endfor %}
+
+</feed>
