@@ -21,6 +21,10 @@ Micro blog powered by Flask and flat files that can be compiled to a static site
     `cd ./build && python -m http.server 8000`
 
     Then open the browser to [localhost:8000](http://localhost:8000/)
+    
+## Demo Site
+
+[https://blog.carsonevans.ca/flasket/](https://blog.carsonevans.ca/flasket/)
 
 ## Writing Blog Posts
 
