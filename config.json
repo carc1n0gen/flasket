@@ -18,9 +18,10 @@
         "email": "name@domain.com"
     },
     "SOCIAL_LINKS": {
-        "twitter": "username",
-        "github":  "username"
+        "twitter": "carc1n0gen",
+        "github":  "carc1n0gen"
     },
     "GOOGLE_ANALYTICS": null,
-    "DISQUS_SHORTNAME": null
+    "DISQUS_SHORTNAME": null,
+    "FREEZER_BASE_URL": "http://blog.carsonevans.ca/flasket/"
 }
