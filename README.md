@@ -70,7 +70,7 @@ Here is an example github actions configuration file that will deploy the static
 name: Build and deploy to github pages
 on:
   push:
-    branches: [ main ]
+    branches: [ main ] # Change this to the branch you want to have build every push
 
 jobs:
   build-and-deploy:
