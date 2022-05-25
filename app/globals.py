@@ -1,6 +1,6 @@
 from markupsafe import Markup
 from werkzeug.local import LocalProxy
-from flask import g, current_app, url_for
+from flask import current_app, url_for
 
 
 def get_feed_url():

@@ -18,7 +18,6 @@ def context_cached(f):
 class Paginator:
     def __init__(self, per_page):
         self.per_page = per_page
-
         self.page = 1
 
     @property
@@ -29,7 +28,6 @@ class Paginator:
     @property
     @context_cached
     def posts(self):
-        posts = get_posts()
         index = self.page - 1
         return self._posts[index:index + self.per_page]
 
