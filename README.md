@@ -4,21 +4,27 @@ Micro blog powered by Flask and flat files that can be compiled to a static site
 
 ## Quickstart
 
-1. Install dependencies
+1. Create a venv and install dependencies
 
-    `pipenv sync` or `pipenv sync --dev`
+    `python -m venv venv`
+
+    `source venv/bin/activate`
+
+    `pip install -r requirements.txt`
 
 2. Run the development server for local testing
 
-    `pipenv run flask run`
+    `flask run`
 
 3. Build a production ready static version of the site
 
-    `pipenv run flask freeze`
+    `flask freeze`
 
 4. To test out the built static site you can use the http.server module
 
-    `cd ./build && python -m http.server 8000`
+    `cd ./build`
+
+    `python -m http.server 8000`
 
     Then open the browser to [localhost:8000](http://localhost:8000/)
     
@@ -42,7 +48,7 @@ A file in the folder `foo` and called `bar.html` will be accessible at `http://e
 
 When creating these pages, you can extend/include template from the configured theme with `theme('template_name.html')`, otherwise if you want to refer to your own templates from the templates folder use just plain `'template_name.html'`.
 
-example:
+for example:
 
 ```jinja
 {# extend or include a theme template file #}
