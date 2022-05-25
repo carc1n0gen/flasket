@@ -97,6 +97,6 @@ jobs:
           CLEAN: true
 ```
 
-Additionally, if you want to deploy to Github Pages on a repo other than `<username>.github.io` (which makes them sort of like a subdirectory on your main Github Pages site), you will want to add an additional configuration to config.json in order for generated urls to be correct.
+Additionally, if you want to deploy to Github Pages on a repo other than `<username>.github.io` (which makes them sort of like a subdirectory on your main Github Pages site), you will want to add an additional configuration to config.yml in order for generated urls to be correct.
 
-`"FREEZER_BASE_URL": "http://<username>.github.io/<repo-name>/"`
+`FREEZER_BASE_URL: http://<username>.github.io/<repo-name>/`
