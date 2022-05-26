@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
     <title>Your awesome title</title>
-    <subtitle>Write an awesome description for your new site here. You can edit this text in config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle>
+    <subtitle>Write an awesome description for your new site here. You can edit this line in config.json. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle>
     <link href="http://blog.carsonevans.ca/flasket/feed.xml" rel="self" />
     <link href="http://blog.carsonevans.ca/flasket/" />
-    <updated>2022-05-25T23:53:22.157111Z</updated>
+    <updated>2022-05-26T00:23:40.092195Z</updated>
     
     <author>
         <name>Foo Bar</name>
