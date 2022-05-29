@@ -29,7 +29,6 @@ class Paginator:
     @property
     @context_cached
     def posts(self):
-        posts = get_posts()
         index = self.page - 1
         return self._posts[index:index + self.per_page]
 

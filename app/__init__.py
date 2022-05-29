@@ -1,7 +1,7 @@
 import os
 from datetime import datetime
-from flask import Flask, render_template, request
-from flask_frozen import Freezer, relative_url_for
+from flask import Flask, render_template
+from flask_frozen import Freezer
 from flask_themer import Themer, render_template as render_theme_template
 from .posts import get_post, get_posts
 from .paginator import paginator

@@ -3,7 +3,6 @@ from datetime import datetime
 import frontmatter
 import misaka as m
 from flask import url_for
-from flask_frozen import relative_url_for
 from pygments import highlight
 from pygments.formatters import HtmlFormatter, ClassNotFound
 from pygments.lexers import get_lexer_by_name
