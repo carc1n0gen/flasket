@@ -1,4 +1,5 @@
 import os
+import yaml
 from datetime import datetime
 from flask import Flask, render_template
 from flask_frozen import Freezer
@@ -16,11 +17,8 @@ app.config.update({
    'FREEZER_STATIC_IGNORE': ['.gitkeep']
 })
 
-
-try:
-   app.config.from_json('../config.json')
-except:
-   pass
+with open('config.yml') as f:
+   app.config.from_mapping(yaml.safe_load(f))
 
 
 freezer = Freezer(app)
