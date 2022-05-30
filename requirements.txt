@@ -9,7 +9,7 @@ Jinja2==3.1.2
 MarkupSafe==2.1.1
 misaka==2.1.1
 pycparser==2.20
-Pygments==2.7.2
+Pygments==2.7.4
 python-frontmatter==0.5.0
 PyYAML==5.3.1
 six==1.15.0
