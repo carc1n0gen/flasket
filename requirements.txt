@@ -4,7 +4,7 @@ Flask==1.1.2
 flask-themer==1.4.1
 Frozen-Flask==0.15
 itsdangerous==1.1.0
-Jinja2==2.11.2
+Jinja2==2.11.3
 MarkupSafe==1.1.1
 misaka==2.1.1
 pycparser==2.20
