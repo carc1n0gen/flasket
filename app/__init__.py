@@ -16,9 +16,7 @@ app.config.update({
    'FREEZER_DESTINATION': '../build',
    'FREEZER_STATIC_IGNORE': ['.gitkeep']
 })
-
-with open('config.yml') as f:
-   app.config.from_mapping(yaml.safe_load(f))
+app.config.from_file('../config.yml', yaml.safe_load)
 
 
 freezer = Freezer(app)
