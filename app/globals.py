@@ -27,7 +27,12 @@ def init_globals(app):
         k.lower(): v for k, v in app.config.items()
     }, 'site')
 
+    def page_url(path, absolute=False):
+        return url_for('page', path=path, _external=absolute)
+    
+    app.add_template_filter(page_url)
 
-    app.add_template_filter(lambda page_name, absolute=False: url_for('page', path=page_name, _external=absolute), 'page_url')
-
-
+    def format_date(date, format=app.config.get('DATE_FORMAT', '%b %d, %Y')):
+        return date.strftime(format)
+    
+    app.add_template_filter(format_date)

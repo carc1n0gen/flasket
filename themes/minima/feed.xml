@@ -6,7 +6,7 @@
     <link href="{{ request.url }}" rel="self" />
     <link href="{{ '/' | page_url(absolute=True) }}" />
     <updated>{{ now.isoformat('T') }}Z</updated>
-    {% if config.AUTHOR %}
+    {% if site.author %}
     <author>
         <name>{{ site.author.name }}</name>
     </author>
