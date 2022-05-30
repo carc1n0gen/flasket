@@ -6,15 +6,19 @@ Micro blog powered by Flask and flat files that can be compiled to a static site
 
 1. Install dependencies
 
-    `pipenv sync` or `pipenv sync --dev`
+    `python -m venv venv`
+
+    `source venv/bin/activate`
+
+    `pip install -r requirements.txt`
 
 2. Run the development server for local testing
 
-    `pipenv run flask run`
+    `flask run`
 
 3. Build a production ready static version of the site
 
-    `pipenv run flask freeze`
+    `flask freeze`
 
 4. To test out the built static site you can use the http.server module
 
@@ -84,9 +88,8 @@ jobs:
       
       - name: Install dependencies and build
         run: |
-          pip install pipenv
-          pipenv sync
-          pipenv run flask freeze
+          pip install -r requirements.txt
+          flask freeze
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@3.7.1
