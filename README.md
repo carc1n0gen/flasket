@@ -16,6 +16,8 @@ Micro blog powered by Flask and flat files that can be compiled to a static site
 
     `flask run`
 
+    or `FLASK_ENV=development flask run` if you need need auto-reloading on python/template changes (not needed for editing posts)
+
 3. Build a production ready static version of the site
 
     `flask freeze`
