@@ -29,7 +29,10 @@ def init_globals(app):
 
     def page_url(path, absolute=False):
         return url_for('page', path=path, _external=absolute)
-
+    
     app.add_template_filter(page_url)
 
-
+    def format_date(date, format=app.config.get('DATE_FORMAT', '%b %d, %Y')):
+        return date.strftime(format)
+    
+    app.add_template_filter(format_date)

@@ -4,7 +4,7 @@
         <ul class="post-list">
         {% for post in paginator.posts %}
             <li>
-                <span class="post-meta">{{ post.date.strftime('%b %d, %Y') }}</span>
+                <span class="post-meta">{{ post.date | format_date }}</span>
                 <h3>
                     <a class="post-link" href="{{ post.url }}">
                         {{ post.title }}

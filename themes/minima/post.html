@@ -7,7 +7,7 @@
         <p class="post-meta">
             {#% assign date_format = site.minima.date_format | default: "%b %d, %Y" %#}
             <time class="dt-published" datetime="{{ post.date.isoformat() }}" itemprop="datePublished">
-                {{ post.date.strftime('%b %m, %Y') }}
+                {{ post.date | format_date }}
             </time>
 
             {# maybe add modified date #}
