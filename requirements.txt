@@ -13,5 +13,5 @@ Pygments==2.7.4
 python-frontmatter==0.5.0
 PyYAML==5.4
 six==1.15.0
-Werkzeug==2.1.2
+Werkzeug==2.2.3
 zipp==3.8.0
