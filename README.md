@@ -30,7 +30,7 @@ Micro blog powered by Flask and flat files that can be compiled to a static site
     
 ## Demo Site
 
-[https://blog.carsonevans.ca/flasket/](https://blog.carsonevans.ca/flasket/)
+[https://carc1n0gen.github.io/flasket/](https://carc1n0gen.github.io/flasket/)
 
 ## Writing Blog Posts
 
