@@ -6,7 +6,7 @@ flask-themer==1.4.1
 Frozen-Flask==1.0.2
 importlib-metadata==4.11.4
 itsdangerous==2.1.2
-Jinja2==3.1.2
+Jinja2==3.1.4
 MarkupSafe==2.1.1
 misaka==2.1.1
 pycparser==2.20
